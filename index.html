@@ -60,7 +60,7 @@ header.solid{background:rgba(15,13,12,.92);backdrop-filter:blur(10px);border-col
 
 /* Hero */
 .hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
-.hero-img{position:absolute;inset:0;z-index:-2;background:url(assets/img/hero.jpg) center 62%/cover no-repeat;transform-origin:70% 70%}
+.hero-img{position:absolute;inset:0;z-index:-2;background:url(assets/img/hero.jpg) 55% 47%/cover no-repeat;transform-origin:70% 70%}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,13,12,.55) 0%,rgba(15,13,12,.15) 35%,rgba(15,13,12,.85) 78%,var(--bg) 100%),linear-gradient(90deg,rgba(15,13,12,.75) 0%,rgba(15,13,12,0) 60%)}
 .hero-inner{padding-block:140px 56px;width:100%}
 .hero h1{font-size:clamp(52px,9vw,124px);max-width:11ch}
@@ -223,7 +223,7 @@ footer{border-top:1px solid var(--line);padding-block:40px 52px;color:var(--mute
 
 <main id="top">
   <section class="hero">
-    <div class="hero-img" role="img" aria-label="Kart de compétition en piste au coucher du soleil"></div>
+    <div class="hero-img" role="img" aria-label="Kart Cavallino Rampante en piste"></div>
     <div class="wrap hero-inner">
       <p class="kicker">Karting de compétition · Suisse &amp; France</p>
       <h1 style="margin-top:20px">Destiné à la vitesse. <span class="r">Construis tes propres rêves.</span></h1>
@@ -277,7 +277,7 @@ footer{border-top:1px solid var(--line);padding-block:40px 52px;color:var(--mute
   </section>
 
   <section class="sec" id="stages" style="padding-top:0">
-    <div class="wrap split">
+    <div class="wrap">
       <div class="card">
         <p class="kicker">Karting camps</p>
         <h3>Des stages de plusieurs jours.</h3>
@@ -287,15 +287,6 @@ footer{border-top:1px solid var(--line);padding-block:40px 52px;color:var(--mute
           <div class="camp"><b>Italie</b><span>Franciacorta &amp; Lonato</span><em>Châssis OTK / IPK · S125 / X30</em></div>
         </div>
         <p>Les prochaines dates sont annoncées sur Instagram. Écris-nous pour réserver tes jours.</p>
-      </div>
-      <div class="card coach">
-        <img src="assets/img/g19.jpg" alt="Pilote Cavallino Rampante en piste" loading="lazy">
-        <div class="in">
-          <p class="kicker" style="color:var(--flag)">Encadrement</p>
-          <h3>Avec Nicolas Rohrbasser</h3>
-          <p style="color:#d8d0c8">Champion du monde loisir et multiple champion suisse. Une expérience racing authentique et de haut niveau.</p>
-          <a class="more" href="https://rohrbasserdrivingschool.com/" target="_blank" rel="noopener">Rohrbasser Driving School ↗</a>
-        </div>
       </div>
     </div>
   </section>
