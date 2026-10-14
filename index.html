@@ -22,6 +22,7 @@
   --red:#d2321f;         /* rouge du logo CR */
   --red-deep:#7d1d12;
   --flag:#f2c230;        /* jaune drapeau / secteur */
+  --gold:#d4ae5c;        /* or du logo CR (affiches camp) */
   --f-display:"Saira Condensed","Arial Narrow","Roboto Condensed",sans-serif;
   --f-ui:"Saira","Segoe UI",system-ui,sans-serif;
   --f-body:"Barlow","Segoe UI",system-ui,sans-serif;
@@ -46,10 +47,10 @@ header.solid{background:rgba(15,13,12,.92);backdrop-filter:blur(10px);border-col
 .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand img{height:40px;width:auto}
-.brand span{font:800 20px/1 var(--f-display);text-transform:uppercase;letter-spacing:.04em}
-.brand small{display:block;font:500 11px/1.4 var(--f-ui);letter-spacing:.24em;color:var(--muted)}
+.brand span{font:800 20px/1 var(--f-display);text-transform:uppercase;letter-spacing:.04em;color:var(--gold)}
+.brand small{display:block;font:500 11px/1.4 var(--f-ui);letter-spacing:.24em;color:var(--gold);opacity:.75}
 .links{display:flex;gap:28px;font:500 14px/1 var(--f-ui);text-transform:uppercase;letter-spacing:.1em}
-.links a{text-decoration:none;color:var(--muted)}
+.links a{text-decoration:none;color:var(--gold)}
 .links a:hover{color:var(--ink)}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;background:var(--red);color:#fff;font:600 14px/1 var(--f-ui);text-transform:uppercase;letter-spacing:.12em;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);transition:background .2s,transform .2s}
 .btn:hover{background:#e8442f;transform:translateY(-2px)}
