@@ -384,7 +384,6 @@ footer{border-top:1px solid var(--line);padding-block:40px 52px;color:var(--mute
         <p class="lead">Que tu viennes pour progresser, performer ou simplement ressentir l'adrénaline, ici tu construis tes propres rêves.</p>
         <ul class="coords">
           <li><b>Téléphone</b><a href="tel:+41762269348">+41 76 226 93 48</a></li>
-          <li><b>E-mail</b><a href="mailto:info@cavallinorampante.ch">info@cavallinorampante.ch</a></li>
           <li><b>Adresse</b><span>Au Tombex 49, 1796 Courgevaux</span></li>
         </ul>
       </div>
@@ -476,7 +475,7 @@ form.addEventListener('submit',async e=>{
     const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()});
     if(!r.ok) throw 0;
     form.reset(); status.innerHTML='<span class="ok">Demande envoyée. On te recontacte rapidement.</span>';
-  }catch{status.textContent="L'envoi a échoué. Appelle-nous ou écris à info@cavallinorampante.ch.";}
+  }catch{status.textContent="L'envoi a échoué. Réessaie dans un instant ou appelle-nous au +41 76 226 93 48.";}
 });
 </script>
 </body>
