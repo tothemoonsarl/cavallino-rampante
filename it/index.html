@@ -199,7 +199,7 @@ header.solid{background:rgba(15,13,12,.92);backdrop-filter:blur(10px);border-col
 .coords{list-style:none;margin:32px 0 0;padding:0;border-top:2px solid var(--ink)}
 .coords li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .coords b{font:600 12px/1 var(--f-ui);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.coords span,.coords a{font:600 19px/1.3 var(--f-ui);user-select:all;word-break:break-word;text-decoration:none}
+.coords span,.coords a{font:600 19px/1.3 var(--f-ui);word-break:break-word;text-decoration:none}
 form{background:var(--panel);border:1px solid var(--line);padding:clamp(22px,3vw,36px);display:grid;gap:16px;min-width:0}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 label{display:grid;gap:7px;font:600 12px/1 var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
@@ -237,7 +237,18 @@ footer{border-top:1px solid var(--line);padding-block:40px 52px;color:var(--mute
 .lang svg{width:24px;height:16px;border-radius:2px;box-shadow:0 0 0 1px rgba(127,127,127,.35)}
 .lang a[aria-current="page"] svg{box-shadow:0 0 0 2px currentColor}
 @media (max-width:520px){.lang{gap:7px;margin-right:10px}.lang svg{width:20px;height:13px}}
+.coords .go{display:inline-block;margin-left:8px;font:700 11px/1 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--red,#c00)}
+.review{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin:28px 0 0;color:var(--muted);font:500 15px/1.3 var(--f-ui)}
+.review-btn{clip-path:none;background:transparent;box-shadow:inset 0 0 0 1.5px currentColor;color:inherit}.review-btn:hover{background:var(--red);box-shadow:none;color:#fff}
+.review-btn span{color:#f5b400}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"Cavallino Rampante Karting","url":"https://www.cavallinorampante.ch/","telephone":"+41762269348",
+"address":{"@type":"PostalAddress","streetAddress":"Au Tombex 49","postalCode":"1796","addressLocality":"Courgevaux","addressRegion":"FR","addressCountry":"CH"},
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"17:00"}],
+"sameAs":["https://g.page/r/CUUsyAB3yg0OECE"],
+"hasMap":"https://www.google.com/maps/search/?api=1&query=Cavallino+Rampante+Karting%2C+Au+Tombex+49%2C+1796+Courgevaux"}
+</script>
 </head>
 <body>
 
@@ -400,8 +411,10 @@ footer{border-top:1px solid var(--line);padding-block:40px 52px;color:var(--mute
         <p class="lead">Che tu venga per migliorare, dare il massimo o semplicemente sentire l'adrenalina, qui costruisci i tuoi sogni.</p>
         <ul class="coords">
           <li><b>Telefono</b><a href="tel:+41762269348">+41 76 226 93 48</a></li>
-          <li><b>Indirizzo</b><span>Au Tombex 49, 1796 Courgevaux</span></li>
+          <li><b>Indirizzo</b><a href="https://www.google.com/maps/search/?api=1&amp;query=Cavallino+Rampante+Karting%2C+Au+Tombex+49%2C+1796+Courgevaux" target="_blank" rel="noopener">Au Tombex 49, 1796 Courgevaux <small class="go">Indicazioni ↗</small></a></li>
+          <li><b>Negozio</b><span>Lun – ven · 9–12, 14–17</span></li>
         </ul>
+        <p class="review"><span>Hai già girato con noi?</span><a class="btn sm review-btn" href="https://g.page/r/CUUsyAB3yg0OECE/review" target="_blank" rel="noopener"><span aria-hidden="true">★</span> Lascia una recensione Google</a></p>
       </div>
       <form name="reservation" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="resa">
         <input type="hidden" name="form-name" value="reservation">
