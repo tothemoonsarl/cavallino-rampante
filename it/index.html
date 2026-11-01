@@ -246,6 +246,17 @@ footer{border-top:1px solid var(--line);padding-block:40px 52px;color:var(--mute
 .shop img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}
 .shop::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:1.5px solid var(--red);z-index:-1}
 @media (max-width:820px){.shop::before{inset:10px -6px -10px 6px}}
+#lyss .results{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+#lyss .results span{display:inline-flex;align-items:baseline;gap:10px;padding:10px 16px;border:1.5px solid var(--red);font:600 12px/1 var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+#lyss .results b{font:700 26px/1 var(--f-ui);letter-spacing:0;color:var(--ink)}
+.story{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(20px,calc((100vw - 1200px)/2)) 18px;scrollbar-width:thin;scrollbar-color:var(--red) transparent;overscroll-behavior-x:contain;scroll-padding-inline:max(20px,calc((100vw - 1200px)/2))}
+.story figure{margin:0;flex:0 0 auto;scroll-snap-align:start;display:grid;gap:10px}
+.story .m{height:clamp(340px,56vh,520px);aspect-ratio:var(--ar);background:#1a1817;overflow:hidden;cursor:zoom-in}
+.story .m img,.story .m video{display:block;width:100%;height:100%;object-fit:cover}
+.story video{cursor:default}
+.story figcaption{display:flex;gap:10px;align-items:baseline;font:600 13px/1.2 var(--f-ui);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.story figcaption b{color:var(--red);font-weight:700}
+.story-hint{margin:14px auto 0;max-width:1200px;padding:0 20px;font:600 12px/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SportsActivityLocation","name":"Cavallino Rampante Karting","url":"https://www.cavallinorampante.ch/","telephone":"+41762269348",
@@ -399,6 +410,29 @@ footer{border-top:1px solid var(--line);padding-block:40px 52px;color:var(--mute
     </div>
   </section>
 
+  <section class="sec" id="lyss" style="padding-top:0">
+    <div class="wrap sec-head">
+      <div><p class="kicker">Gara · 31 ottobre 2026</p><h2>Night Grand Prix di Lyss.</h2></div>
+      <div><p>Una giornata intera sul circuito di Lyss, dal paddock alla partenza in notturna. In coppia per questa gara di endurance, Carlo ed Elias firmano il 7° tempo in qualifica e chiudono all'11° posto.</p><div class="results"><span>Qualifiche <b>P7</b></span><span>Gara <b>P11</b></span></div></div>
+    </div>
+    <div class="story">
+      <figure><a class="m" style="--ar:484/860" href="../assets/lyss/01.jpg"><img src="../assets/lyss/01-s.jpg" width="484" height="860" alt="Arrivo al paddock — Night Grand Prix de Lyss" loading="lazy"></a><figcaption><b>01</b>Arrivo al paddock</figcaption></figure>
+      <figure><a class="m" style="--ar:484/860" href="../assets/lyss/02.jpg"><img src="../assets/lyss/02-s.jpg" width="484" height="860" alt="Preparazione del kart — Night Grand Prix de Lyss" loading="lazy"></a><figcaption><b>02</b>Preparazione del kart</figcaption></figure>
+      <figure><div class="m" style="--ar:464/832"><video data-src="../assets/lyss/03.mp4" poster="../assets/lyss/03.jpg" muted loop playsinline preload="none" aria-label="Riscaldamento"></video></div><figcaption><b>03</b>Riscaldamento</figcaption></figure>
+      <figure><div class="m" style="--ar:464/832"><video data-src="../assets/lyss/04.mp4" poster="../assets/lyss/04.jpg" muted loop playsinline preload="none" aria-label="Verso la pista"></video></div><figcaption><b>04</b>Verso la pista</figcaption></figure>
+      <figure><a class="m" style="--ar:484/860" href="../assets/lyss/05.jpg"><img src="../assets/lyss/05-s.jpg" width="484" height="860" alt="Qualifiche — Night Grand Prix de Lyss" loading="lazy"></a><figcaption><b>05</b>Qualifiche</figcaption></figure>
+      <figure><a class="m" style="--ar:640/853" href="../assets/lyss/06.jpg"><img src="../assets/lyss/06-s.jpg" width="640" height="853" alt="In griglia — Night Grand Prix de Lyss" loading="lazy"></a><figcaption><b>06</b>In griglia</figcaption></figure>
+      <figure><a class="m" style="--ar:640/853" href="../assets/lyss/07.jpg"><img src="../assets/lyss/07-s.jpg" width="640" height="853" alt="Concentrazione — Night Grand Prix de Lyss" loading="lazy"></a><figcaption><b>07</b>Concentrazione</figcaption></figure>
+      <figure><a class="m" style="--ar:640/853" href="../assets/lyss/08.jpg"><img src="../assets/lyss/08-s.jpg" width="640" height="853" alt="Pronti al via — Night Grand Prix de Lyss" loading="lazy"></a><figcaption><b>08</b>Pronti al via</figcaption></figure>
+      <figure><div class="m" style="--ar:464/832"><video data-src="../assets/lyss/09.mp4" poster="../assets/lyss/09.jpg" muted loop playsinline preload="none" aria-label="In pista"></video></div><figcaption><b>09</b>In pista</figcaption></figure>
+      <figure><div class="m" style="--ar:464/832"><video data-src="../assets/lyss/10.mp4" poster="../assets/lyss/10.jpg" muted loop playsinline preload="none" aria-label="A bordo pista"></video></div><figcaption><b>10</b>A bordo pista</figcaption></figure>
+      <figure><div class="m" style="--ar:464/832"><video data-src="../assets/lyss/11.mp4" poster="../assets/lyss/11.jpg" muted loop playsinline preload="none" aria-label="Cala la notte"></video></div><figcaption><b>11</b>Cala la notte</figcaption></figure>
+      <figure><div class="m" style="--ar:464/832"><video data-src="../assets/lyss/12.mp4" poster="../assets/lyss/12.jpg" muted loop playsinline preload="none" aria-label="Gara in notturna"></video></div><figcaption><b>12</b>Gara in notturna</figcaption></figure>
+      <figure><a class="m" style="--ar:640/480" href="../assets/lyss/13.jpg"><img src="../assets/lyss/13-s.jpg" width="640" height="480" alt="Cena di squadra — Night Grand Prix de Lyss" loading="lazy"></a><figcaption><b>13</b>Cena di squadra</figcaption></figure>
+    </div>
+    <p class="story-hint">Scorri la giornata, in ordine →</p>
+  </section>
+
   <section class="sec" id="galerie" style="padding-top:0">
     <div class="wrap sec-head">
       <div><p class="kicker">Foto</p><h2>Nel paddock.</h2></div>
@@ -519,6 +553,13 @@ form.addEventListener('submit',async e=>{
     form.reset(); status.innerHTML='<span class="ok">Richiesta inviata. Ti ricontattiamo al più presto.</span>';
   }catch{status.textContent="L'invio non è riuscito. Riprova tra un attimo o chiamaci al +41 76 226 93 48.";}
 });
+</script>
+<script>
+(()=>{const vs=[...document.querySelectorAll('.story video')];if(!vs.length)return;
+const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(!v.src)v.src=v.dataset.src;v.play().catch(()=>{});}else v.pause();}),{threshold:.4});
+vs.forEach(v=>io.observe(v));
+const lb=document.getElementById('lb');if(!lb)return;const im=lb.querySelector('img');
+document.querySelector('.story').addEventListener('click',e=>{const a=e.target.closest('a.m');if(!a)return;e.preventDefault();im.src=a.getAttribute('href');lb.hidden=false;});})();
 </script>
 </body>
 </html>
